@@ -1,6 +1,6 @@
 /*
 
-This little program is my final hackathon at Hack Reactor Remote Prep RP10
+This little program is my final hackathon at Hack Reactor Remote Prep RP10 in Dec 2015.
 
 First, fill out all the forms as you wish, run it. 
 
