@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/bootswatch/3.0.3/united/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="main.css" rel="stylesheet" type="text/css" media="all">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Star Wars MadLibs</title>
+  </head>
+  <body>
+<center><img id="banner" src="http://i13.photobucket.com/albums/a287/theatricaldreamer/star%20wars/yoda_quote-1305812.jpeg"></center><br>
+
+<button id="btn-play" type="submit" class="btn btn-primary btn-lg">Play Again?</button>
+
+    <div class="container">
+    
+      <!-- <h1>Star Wars MadLibs</h1><hr><hr> -->
+      <!-- <form id="my-form" role="form">
+  <input id="my-input" class="form-control" type="text" placeholder="Enter something .."> -->
+  <!-- <br> -->
+  <!-- <button id="btn-click" type="submit" class="btn btn-primary btn-md">My BIG Button</button> -->
+<!-- </form> -->
+
+
+<!-- start story -->
+
+<div id="story">
+<!-- <left><button id="btn-play" type="submit" class="btn btn-primary btn-lg">Play Again?</button></left> -->
+
+      <div style="overflow:hidden; position:absolute; left:0; top:0; width:50px; height:25px;">
+  <div style="margin-top:-290px;">
+  <object width="420" height="315">
+    <param name="movie" value="http://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2"></param>
+    <param name="allowFullScreen" value="true"></param>
+    <param name="allowscriptaccess" value="always"></param>
+    <embed src="http://www.youtube.com/v/EjMNNpIksaI?version=3&amp;hl=en_US&autoplay=1&amp;autohide=2" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+  </object>
+  </div>
+</div>
+
+<p id="start">A short time ago in a browser very, very close by&hellip;</p>
+
+<!-- Rick Roll -->
+<div id='rickroll'>
+ 
+</div>
+
+
+<!-- <h1>STAR WARS<sub>titles in CSS3</sub></h1> -->
+
+<div id="titles">
+  <div id="titlecontent">
+
+    <p class="center">EPISODE <span id= 'for'>for</span>:<br />
+      A NEW LOOP</p>
+
+
+  <h1>Mad with the Libs</h1>
+  <!-- <hr> -->
+<p>It is a period of <span class="adjective"></span> war. Rebel spaceships, striking from <span class="location"></span>, have won their first victory against the <span class="company"></span> Empire. During the battle, Rebel spies managed to steal secret plans to <span class="company"></span>'s ultimate weapon, the armored <span class="noun2"></span> with enough power to <span class="verb"></span> an entire planet.</p>
+
+<p>To allow  <span class="person"></span>, a Rebel spy, to escape, Master Yoda created a diversion to delay <span class="company"></span>'s pursuit. But, <span class="person"></span> became distracted and was taken hostage by Darth Nihilus.
+
+<p>Pursued by the <span class="company"></span>'s sinister agents, <span class="person"></span> races home aboard a starship, custodian of the stolen plans that can <span class="verb"></span> everyone, destroy the <span class="noun2"></span>, and restore peace to the galaxy...</p>
+
+        </div>
+      </div>
+<iframe style="visibility:hidden" width="560" height="315" src="http://www.youtube.com/embed/1KAOq7XX2OY" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<!-- end story -->
+
+    </div>
+    <div id="questions">
+  <h1>Use the Forms!</h1>
+  <hr>
+  <form role="form">
+    <div class="form-group">
+      <label for="person">Name</label>
+      <input id="person" class="form-control person" type="text" placeholder="Enter a name ... (Beware: The dark side is watching.)">
+    </div>
+    <div class="form-group">
+      <label for="adjective">Adjective</label>
+      <input id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ...">
+    </div>
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input id="location" class="form-control location" type="text" placeholder="Enter a location ...">
+    </div>
+    <div class="form-group">
+      <label for="company">Company Name</label>
+      <input id="company" class="form-control company" type="text" placeholder="Enter the name of a company/corporation ...">
+    </div>
+    <div class="form-group">
+      <label for="noun2">A Noun</label>
+      <input id="noun2" class="form-control plural-noun" type="text" placeholder="Enter a noun ...">
+    </div>
+    <div class="form-group">
+      <label for="verb">A Verb</label>
+      <input id="verb" class="form-control verb" type="text" placeholder="Enter a verb ...">
+    </div>
+    <div>
+    </div>
+  </form>
+  <center><div class="btn-click">
+  <button id="btn-click" type="submit" class="btn btn-primary btn-md">Generate!</button>
+  </div></center>
+  <hr>
+</div>
+<!-- end form -->
+  <script>
+  var tag = document.createElement('script');
+  tag.src = "//www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player');
+  }
+</script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
